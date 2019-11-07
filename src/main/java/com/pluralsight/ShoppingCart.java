@@ -60,4 +60,9 @@ public class ShoppingCart {
         cartItems.remove(index);
     }
 
+    public void updateCartItem(int index, int quantity) {
+        CartItem cartItem = cartItems.get(index);
+        cartItem.setQuantity(quantity);
+    }
+
 }
